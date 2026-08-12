@@ -1,36 +1,35 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
+  margin: 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f4f5f6;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #eceef0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding: 24px;
 }
 
 .card-container {
-  background: #ffffff;
+  background: #f4f5f6;
   border-radius: 32px;
-  padding: 48px 24px 40px;
+  padding: 48px 32px 40px;
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
 }
 
 .avatar-wrapper {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 20px;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 28px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .avatar {
@@ -40,48 +39,56 @@ body {
 }
 
 h1 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: #111111;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0 0 6px;
+  color: #1a1a1a;
 }
 
 .subtitle {
-  margin-bottom: 28px;
-  color: #666666;
-  font-size: 16px;
+  margin: 0 0 32px;
+  color: #8a8a8a;
+  font-size: 15px;
 }
 
 .info-box {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 8px 24px;
+  text-align: left;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background-color: #2b2b2b;
-  color: #ffffff;
+  gap: 16px;
+  padding: 18px 0;
   text-decoration: none;
-  padding: 16px 20px;
-  border-radius: 16px;
+  color: #1a1a1a;
+  border-bottom: 1px solid #ececec;
   font-size: 15px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
 }
 
-.row:hover {
-  background-color: #1a1a1a;
+.row:last-child {
+  border-bottom: none;
 }
 
 .row i {
-  font-size: 18px;
-  color: #ffffff;
+  width: 20px;
+  text-align: center;
+  color: #1a1a1a;
 }
 
 .row span {
+  text-decoration: underline;
+}
+
+.contact-row {
+  font-weight: 600;
+}
+
+.contact-row span {
   text-decoration: none;
 }
